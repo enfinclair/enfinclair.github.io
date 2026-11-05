@@ -97,7 +97,7 @@ img { max-width: 100%; display: block; }
   transition: transform 0.15s ease, background 0.15s ease;
 }
 .btn:hover { background: var(--accent-strong); transform: translateY(-1px); }
-.btn.small { padding: 10px 18px; font-size: 15px; box-shadow: none; }
+.btn.small { padding: 10px 18px; font-size: 15px; box-shadow: none; white-space: nowrap; }
 
 /* Hero */
 .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; padding: 40px 0 72px; }
@@ -192,6 +192,13 @@ footer nav { display: flex; gap: 18px; flex-wrap: wrap; }
 .legal p, .legal li { color: var(--ink); }
 .legal .updated { color: var(--muted); }
 .legal .todo { background: #fff3cd; color: #6b4b00; padding: 2px 6px; border-radius: 6px; }
+
+@media (max-width: 420px) {
+  .brand { font-size: 18px; gap: 8px; }
+  .brand img { width: 30px; height: 30px; }
+  .btn.small { padding: 8px 14px; font-size: 14px; }
+  .hero-cta .btn, .waitlist .btn { width: 100%; }
+}
 
 @media (max-width: 820px) {
   .hero { grid-template-columns: 1fr; padding-top: 16px; }
