@@ -79,7 +79,7 @@ body::before { width: 520px; height: 520px; top: -180px; right: -160px; }
 body::after { width: 420px; height: 420px; top: 420px; left: -220px; opacity: 0.6; }
 
 a { color: var(--accent); }
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 
 .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
 
